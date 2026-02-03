@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera Comunión - Cristhian Camilo Quintero</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fondo decorativo sutil -->
+    <div class="decorative-bg"></div>
+
+    <!-- Menú elegante -->
+    <nav class="elegant-menu" id="elegantMenu">
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu-items" id="menuItems">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#evento">Detalles</a></li>
+        <li><a href="#cuenta">Cuenta Regresiva</a></li>
+        <li><a href="#ubicacion">Ceremonia</a></li>
+        <li><a href="#fiesta">Celebración</a></li>
+        <li><a href="#bendiciones">Bendiciones</a></li>
+        <li><a href="#confirmacion">Confirmar</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección Hero Elegante con Parallax -->
+    <section class="hero" id="inicio">
+      <div class="hero-ornament top-left"></div>
+      <div class="hero-ornament top-right"></div>
+      <div class="parallax-layer" id="parallaxLayer"></div>
+
+      <div class="hero-content">
+        <div class="elegant-cross">✟</div>
+
+        <h1 class="elegant-title">Primera Comunión</h1>
+
+        <div class="divider-ornament"></div>
+
+        <p class="hero-verse">
+          "Yo soy el pan de vida;<br />
+          el que a mí viene, nunca tendrá hambre"
+        </p>
+        <span class="verse-ref">— Juan 6:35</span>
+
+        <div class="name-section">
+          <div class="name-ornament">◆</div>
+          <h2 class="child-name">Cristhian Camilo<br />Quintero</h2>
+          <div class="name-ornament">◆</div>
+        </div>
+
+        <div class="photo-container">
+          <div class="photo-border">
+            <img
+              src="Assets/imagenes/img1.png"
+              alt="Cristhian Camilo"
+              class="elegant-photo"
+            />
+          </div>
+        </div>
+
+        <div class="divider-line"></div>
+      </div>
+    </section>
+
+    <!-- Nueva Sección: Carrusel de Fotos Elegante -->
+    <section class="gallery-section" id="galeria">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Galería de Recuerdos</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-elegant">
+          <button class="carousel-btn prev-btn" id="prevBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Las imágenes se agregarán dinámicamente desde JavaScript -->
+              <div class="carousel-slide active">
+                <div class="carousel-image-wrapper">
+                  <img src="Assets/imagenes/img1.png" alt="Recuerdo 1" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <p class="carousel-caption">Preparándome para este día especial</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image-wrapper">
+                  <img src="Assets/imagenes/img2.png" alt="Recuerdo 2" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <p class="carousel-caption">Mis primeros pasos en la fe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image-wrapper">
+                  <img src="Assets/imagenes/img3.png" alt="Recuerdo 3" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <p class="carousel-caption">Creciendo en la gracia de Dios</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn next-btn" id="nextBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="carousel-indicators" id="carouselIndicators">
+          <!-- Los indicadores se generarán dinámicamente -->
+        </div>
+
+        <div class="carousel-thumbnails" id="carouselThumbnails">
+          <!-- Las miniaturas se generarán dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Evento Elegante -->
+    <section class="event-section" id="evento">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Detalles del Evento</h2>
+
+      <div class="elegant-card">
+        <div class="date-elegant">
+          <div class="date-top">
+            <span class="date-weekday">Domingo</span>
+          </div>
+          <div class="date-main">
+            <span class="date-day">08</span>
+            <div class="date-separator"></div>
+            <span class="date-month">Marzo</span>
+          </div>
+          <div class="date-bottom">
+            <span class="date-year">2026</span>
+          </div>
+        </div>
+
+        <div class="event-divider"></div>
+
+        <button class="elegant-btn" id="addCalendar">
+          <span class="btn-text">Agendar en Calendario</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Cuenta Regresiva Elegante -->
+    <section class="countdown-section" id="cuenta">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Faltan</h2>
+
+      <div class="countdown-elegant">
+        <div class="countdown-item-elegant">
+          <span class="countdown-number-elegant" id="days">0</span>
+          <span class="countdown-text-elegant">Días</span>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item-elegant">
+          <span class="countdown-number-elegant" id="hours">0</span>
+          <span class="countdown-text-elegant">Horas</span>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item-elegant">
+          <span class="countdown-number-elegant" id="minutes">0</span>
+          <span class="countdown-text-elegant">Minutos</span>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item-elegant">
+          <span class="countdown-number-elegant" id="seconds">0</span>
+          <span class="countdown-text-elegant">Segundos</span>
+        </div>
+      </div>
+
+      <p class="countdown-elegant-msg" id="countdownMsg">
+        Para este día tan especial
+      </p>
+    </section>
+
+    <!-- Ceremonia Elegante -->
+    <section class="location-section" id="ubicacion">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Ceremonia Religiosa</h2>
+
+      <div class="elegant-card">
+        <div class="church-elegant">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <rect
+              x="40"
+              y="70"
+              width="40"
+              height="45"
+              fill="#d4af37"
+              opacity="0.2"
+              stroke="#8b7355"
+              stroke-width="1.5"
+            />
+            <polygon points="40,70 60,50 80,70" fill="#8b7355" opacity="0.3" />
+            <rect
+              x="53"
+              y="55"
+              width="14"
+              height="30"
+              fill="#8b7355"
+              opacity="0.3"
+            />
+            <polygon points="53,55 60,42 67,55" fill="#d4af37" opacity="0.2" />
+            <line
+              x1="60"
+              y1="30"
+              x2="60"
+              y2="44"
+              stroke="#8b7355"
+              stroke-width="2"
+            />
+            <line
+              x1="56"
+              y1="34"
+              x2="64"
+              y2="34"
+              stroke="#8b7355"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+
+        <div class="location-elegant-info">
+          <div class="time-elegant">2:00 P.M.</div>
+
+          <h3 class="location-elegant-name">
+            Parroquia La Purísima Concepción
+          </h3>
+          <p class="location-elegant-sub">Loma el Chocho</p>
+
+          <div class="address-elegant">
+            <p>Cl. 36 Sur #23-15</p>
+            <p>Envigado, Antioquia</p>
+          </div>
+        </div>
+
+        <div class="event-divider"></div>
+
+        <button class="elegant-btn" id="churchLocation">
+          <span class="btn-text">Cómo Llegar</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Celebración Elegante -->
+    <section class="party-section" id="fiesta">
+        <div class="section-divider">
+          <span class="divider-icon">✟</span>
+        </div>
+
+        <h2 class="elegant-section-title">Celebración</h2>
+
+        <div class="elegant-card">
+          <p class="party-elegant-intro">
+            Después de la ceremonia, te invitamos a compartir<br />
+            un momento de alegría y celebración
+          </p>
+
+          <div class="party-elegant-details">
+            <div class="detail-elegant">
+              <span class="detail-elegant-label">Lugar</span>
+              <h4 class="detail-elegant-title">Casa Familiar</h4>
+              <p class="detail-elegant-text">
+                Calle 45 Sur #28-42<br />
+                Envigado, Antioquia
+              </p>
+            </div>
+
+            <div class="detail-elegant-separator"></div>
+
+            <div class="detail-elegant">
+              <span class="detail-elegant-label">Hora</span>
+              <h4 class="detail-elegant-title">4:00 P.M.</h4>
+              <p class="detail-elegant-text">Apreciamos la puntualidad para poder disfrutar de la celebración al máximo</p>
+            </div>
+          </div>
+
+          <div class="party-elegant-note">
+            Tu presencia es nuestro mejor regalo
+          </div>
+
+          <div class="event-divider"></div>
+
+          <button class="elegant-btn" id="partyLocation">
+            <span class="btn-text">Ver Ubicación</span>
+          </button>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Mensajes de Bendiciones -->
+    <section class="blessings-section" id="bendiciones">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Bendiciones</h2>
+
+      <div class="blessings-container">
+        <div class="blessing-card">
+          <div class="blessing-icon">📖</div>
+          <p class="blessing-text">
+            "El Señor te bendiga y te guarde"
+          </p>
+          <span class="blessing-ref">— Números 6:24</span>
+        </div>
+
+        <div class="blessing-card">
+          <div class="blessing-icon">🕊️</div>
+          <p class="blessing-text">
+            "Que el amor de Dios llene tu corazón"
+          </p>
+          <span class="blessing-ref">— Oración familiar</span>
+        </div>
+
+        <div class="blessing-card">
+          <div class="blessing-icon">✨</div>
+          <p class="blessing-text">
+            "Crecer en gracia y sabiduría"
+          </p>
+          <span class="blessing-ref">— Lucas 2:52</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmación Elegante -->
+    <section class="rsvp-section" id="confirmacion">
+      <div class="section-divider">
+        <span class="divider-icon">✟</span>
+      </div>
+
+      <h2 class="elegant-section-title">Confirmar Asistencia</h2>
+
+      <div class="elegant-card">
+        <p class="rsvp-elegant-text">
+          Por favor, confírmanos tu asistencia<br />
+          para poder preparar todo con amor
+        </p>
+
+        <div class="rsvp-elegant-options">
+          <button class="rsvp-elegant-btn" data-response="SI">
+            <span class="rsvp-elegant-label">Sí asistiré</span>
+          </button>
+
+          <button class="rsvp-elegant-btn" data-response="TALVEZ">
+            <span class="rsvp-elegant-label">Tal vez pueda</span>
+          </button>
+
+          <button class="rsvp-elegant-btn" data-response="NO">
+            <span class="rsvp-elegant-label">No podré asistir</span>
+          </button>
+        </div>
+
+        <div class="whatsapp-elegant-note">
+          <p>Se enviará un mensaje por WhatsApp</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Elegante -->
+    <footer class="elegant-footer">
+      <div class="footer-ornament">✟</div>
+      <p class="footer-elegant-text">
+        Con la bendición de Dios y el amor de la familia
+      </p>
+      <p class="footer-elegant-date">08 de Marzo, 2026</p>
+      <div class="footer-elegant-divider"></div>
+    </footer>
+
+    <!-- Control de Música Elegante -->
+    <button class="music-elegant-btn" id="musicBtn">
+      <svg class="music-icon" id="musicIcon" viewBox="0 0 24 24">
+        <path
+          d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+        />
+      </svg>
+    </button>
+
+    <audio id="backgroundMusic" loop>
+      <source src="Assets/audio/audio.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
