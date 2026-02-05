@@ -285,7 +285,7 @@ function updateCountdown() {
 const addCalendarBtn = document.getElementById('addCalendar');
 if (addCalendarBtn) {
     addCalendarBtn.addEventListener('click', () => {
-        const eventTitle = 'Primera Comunión - Thomas David Alvares Castro';
+        const eventTitle = 'Primera Comunión - Thomas David Álvarez Castro';
         const eventDate = '20260308';
         const startTime = '140000';
         const endTime = '160000';
@@ -336,16 +336,16 @@ rsvpButtons.forEach(button => {
         
         switch(response) {
             case 'SI':
-                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
+                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Álvarez Castroel 08 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
                 break;
             case 'TALVEZ':
-                message = 'Hola, en relación a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
+                message = 'Hola, en relación a la Primera Comunión de Thomas David Álvarez Castroel 08 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
                 break;
             case 'NO':
-                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
+                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Álvarez Castroel 08 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
                 break;
             default:
-                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo a las 2:00 PM.';
+                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Álvarez Castroel 08 de Marzo a las 2:00 PM.';
         }
         
         const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
