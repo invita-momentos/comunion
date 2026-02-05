@@ -336,16 +336,16 @@ rsvpButtons.forEach(button => {
         
         switch(response) {
             case 'SI':
-                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Álvarez Castroel 022 deMarzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
+                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Álvarez Castroel 22deMarzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
                 break;
             case 'TALVEZ':
-                message = 'Hola, en relación a la Primera Comunión de Thomas David Álvarez Castroel 022 deMarzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
+                message = 'Hola, en relación a la Primera Comunión de Thomas David Álvarez Castroel 22deMarzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
                 break;
             case 'NO':
-                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Álvarez Castroel 022 deMarzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
+                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Álvarez Castroel 22deMarzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
                 break;
             default:
-                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Álvarez Castroel 022 deMarzo a las 2:00 PM.';
+                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Álvarez Castroel 22deMarzo a las 2:00 PM.';
         }
         
         const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
