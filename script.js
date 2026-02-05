@@ -285,7 +285,7 @@ function updateCountdown() {
 const addCalendarBtn = document.getElementById('addCalendar');
 if (addCalendarBtn) {
     addCalendarBtn.addEventListener('click', () => {
-        const eventTitle = 'Primera Comunión - Thomas David Alvares Cano';
+        const eventTitle = 'Primera Comunión - Thomas David Alvares Castro';
         const eventDate = '20260308';
         const startTime = '140000';
         const endTime = '160000';
@@ -306,7 +306,7 @@ const churchLocationBtn = document.getElementById('churchLocation');
 if (churchLocationBtn) {
     churchLocationBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        const address = encodeURIComponent('Cl 51 49 44, Copacabana, Antioquia, Colombia');
+        const address = encodeURIComponent('Cl 51 49 44,Parque de Bello, Antioquia, Colombia');
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
         window.open(googleMapsUrl, '_blank');
     });
@@ -336,16 +336,16 @@ rsvpButtons.forEach(button => {
         
         switch(response) {
             case 'SI':
-                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Alvares Cano el 08 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
+                message = '¡Hola! Confirmo mi asistencia a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo a las 2:00 PM. ¡Estaré ahí para celebrar! 🎉✞';
                 break;
             case 'TALVEZ':
-                message = 'Hola, en relación a la Primera Comunión de Thomas David Alvares Cano el 08 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
+                message = 'Hola, en relación a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo, aún no estoy seguro/a de poder asistir, pero les confirmaré pronto. Gracias por la invitación 🙏✞';
                 break;
             case 'NO':
-                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Alvares Cano el 08 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
+                message = 'Hola, lamentablemente no podré asistir a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo, pero estaré con ustedes en espíritu en este día tan especial 💙✞';
                 break;
             default:
-                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Alvares Cano el 08 de Marzo a las 2:00 PM.';
+                message = 'Hola, me gustaría confirmar sobre la asistencia a la Primera Comunión de Thomas David Alvares Castroel 08 de Marzo a las 2:00 PM.';
         }
         
         const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
