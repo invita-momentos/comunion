@@ -341,6 +341,9 @@ body {
     padding-bottom: 75%; /* Ratio 4:3 */
     overflow: hidden;
     background: var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-image {
@@ -349,7 +352,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: var(--beige);
     transition: transform 0.5s ease;
 }
 
